@@ -6,3 +6,4 @@ Here p* is estimated using Monte Carlo simulation, as follows:
     *   Choose a blocked site randomly
     *   Open the choosen site
 *   The fraction of sites that are open provides an estimate of the percolation threshold.
+Monte Carlo simulation takes t samples.
