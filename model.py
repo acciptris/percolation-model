@@ -16,6 +16,7 @@ class model:
 
     '''
     #debugging tools
+
     def display_all(self):
         print(self.array)
         print(self.graph_size)
@@ -37,6 +38,7 @@ class model:
 
     def root(self,ind):
         if(debug):print("called root of",ind,end=" ")
+        
         root=ind
         while(self.array[root] != root):
             root = self.array[root]
@@ -77,6 +79,7 @@ class model:
 
     def unblock(self,x):
         if(debug):print("unblock",x)
+
         if(self.unblock_status[x]==0):
             if((x-1)%self.edge_length and self.unblock_status[x-1]):
                 self.union(x-1,x)
