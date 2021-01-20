@@ -95,7 +95,7 @@ class model:
             self.unblock_status[x]=1
             self.unblock_count += 1
 
-def main(size,unblock_input):
+def simulate(size,unblock_input):
     x = model(size)
 
     for i in unblock_input:
