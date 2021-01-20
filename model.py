@@ -15,6 +15,7 @@ class model:
         self.graph_size = [1]*(size**2+2)
         self.unblock_status = [0]*(size**2+2)
         self.unblock_count = 0
+        self.initial_connection()
 
     '''
     #debugging tools
