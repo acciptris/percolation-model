@@ -1,3 +1,5 @@
+import random
+
 debug = False
 
 class model:
@@ -91,3 +93,13 @@ class model:
                 self.union(x,x+self.edge_length)
             self.unblock_status[x]=1
             self.unblock_count += 1
+
+def main(size,unblock_input):
+    x = model(size)
+
+    for i in unblock_input:
+        x.unblock(i)
+        if(x.connected(0,x.last)):
+            break
+
+    return x.unblock_count
