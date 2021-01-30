@@ -1,5 +1,3 @@
-import random
-
 debug = False
 
 class model:
