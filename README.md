@@ -16,3 +16,5 @@ The file `model.py` has a class for the grid with all the required functions.
 The file `create-data.py` creates the data using the model and creates `data.csv`.
 
 `notebook.ipynb` is used to for analysis of `data.csv`.
+
+Finally the threshold probability is found to be 0.59241956, with a standard deviation of 0.026125203.
